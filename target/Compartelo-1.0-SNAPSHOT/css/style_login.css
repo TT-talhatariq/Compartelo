@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-position-y: -130px;
+    background-attachment: fixed;
+}
+
+html {
+
+    background-image: url('images/background-image.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.tag_line{
+    margin-top: -5px;
+    margin-left:10px ;
+    color: black;
+    text-align: left;
+    font-size: large;
+
+}
+header{
+    display: grid;
+    background-color: rgba(102,102,203,0.7);
+    grid-template-columns: 1fr 1fr;
+
+}
+.title{
+    display: flex;
+}
+.title p, i{
+    align-self: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-left: 1.2rem;
+}
+
+nav{
+    align-self: center;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav a, button, a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+nav a:hover, a:hover{
+    color: black;
+}
+.highlight{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.5rem 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+.highlight:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.box{
+    border: 1px wheat solid;
+    margin: auto;
+    padding:3rem;
+    width: 30%;
+    background:rgba(252, 252, 252, 0.3);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    object-fit: contain;
+    -webkit-box-shadow: 2px 1px 12px 0px rgba(29,28,30,0.5);
+    box-shadow: 2px 1px 12px 0px rgba(29,28,30,0.5);
+}
+
+input[type = "email"],
+input[type = "password"]{
+    margin: 10px;
+    background-color:rgba(252, 252, 252, 0.8);
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    font-size: 20px;
+    height: 30px;
+    width: 80%;
+    padding:2%;
+    padding-left: 50px;
+    -webkit-box-shadow: 2px 1px 12px 0px rgba(0,0,0,0.38);
+    box-shadow: 2px 1px 12px 0px rgba(0,0,0,0.38);
+    border: 2px solid rgba(28,110,164,0.69);
+    border: 0;
+}
+input[type = "email"]::placeholder{
+    margin: 0;
+    border: 0;
+}
+.email{
+    background-image: url('icons/email.png');
+    background-position: 6px 8px;
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+.password, .con-password {
+    background-image: url('icons/key.png');
+    background-position: 6px 8px;
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+input[type="submit"]
+{
+    background-color:rgb(41, 38, 38)  ;
+    color:white;
+    font-size: 20px;
+    height: 30px;
+    width: 95%;
+    margin-top: 10px;
+    padding:1%;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 50px;
+    border: 1px white solid;
+    background-color: rgb(7, 118, 161);
+    -webkit-box-shadow: 2px 1px 12px 0px rgba(255,255,255,0.38);
+    box-shadow: 2px 1px 12px 0px rgba(255,255,255,0.38);
+
+}
+input[type="submit"]:hover{
+    background-color:black;
+    box-shadow: 2px 1px 12px 0px rgba(252, 246, 246,1);
+
+}
+.error{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(224, 0, 0);
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    display: none;
+}

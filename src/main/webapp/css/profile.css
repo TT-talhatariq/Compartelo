@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --shadow : 0px 2px 11px 1px rgba(0, 0, 0, 0.93);
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-position-y: -130px;
+    background-attachment: fixed;
+}
+
+/* Header */
+
+header{
+    display: grid;
+    background-color: rgba(102,102,203,0.7);
+    grid-template-columns: 1fr 1fr;
+
+}
+.title{
+    display: flex;
+}
+.title p, i{
+    align-self: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-left: 1.2rem;
+}
+
+nav{
+    align-self: center;
+    margin-left: 4rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav a, button, a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+a:hover{
+    color: black;
+}
+.highlight{
+    background-color: rgba(255, 255, 255);
+    padding: 0.5rem 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+.highlight:hover{
+    background-color: black;
+    color: white;
+}
+.name a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+}
+
+
+/* Body */
+
+
+main{
+}
+.info{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    align-self: center;
+    margin-top: 2rem;
+}
+img{
+    align-self: center;
+    height: 100%;
+
+}
+img:hover{
+
+}
+
+.image button{
+    margin-top: 2rem;
+    all: unset;
+    height: 80%;
+}
+
+.image button:hover{
+    opacity: 0.7;
+
+}
+
+.image p{
+    text-align: center;
+}
+
+.info .name{
+    display: flex;
+    flex-direction: column;
+    margin:2rem;
+
+}
+.info .name h1{
+    font-size: 4rem;
+    color: rgb(68, 125, 248);
+}
+.info .name p{
+    margin-top: -50px;
+    font-size: 1.2rem;
+}
+
+/* Main Section */
+.container{
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    background-color: rgba(232, 232, 243, 0.7);
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-right: 10rem;
+}
+.files{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+.file-item{
+    background-color:white;
+    border-radius: 10px;
+    border: 3px black solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+.file-name{
+    display: flex;
+}
+.file-name .name{
+    flex: 1;
+    align-self: center;
+    margin-left: 10px;
+}
+.category{
+  margin-top: -10px;
+  display: flex;
+}
+
+
+/* Style Individual */
+.info .upload{
+    color: black;
+    align-self: center;
+}
+
+.file-name .name p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.file-item p{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.category strong{
+    font-size: 1.1rem;
+}
+.category button{
+    all:unset;
+    width:50%;
+    margin-top: 0.9rem;
+    margin-left: 1.2rem;
+    font-size: 1.3rem;
+    color: black;
+    align-self: center;
+}
+
+.category button:hover{
+    color: red;
+}
+.download p{
+    font-size: 1.1rem;
+    margin-left: 7px;
+}
+
+h2{
+    margin-left: 2rem;
+    padding-top: 1rem;
+    line-height: 0.5;
+}
+.file-name i{
+    color: rgba(104, 133, 211);;
+}
+
+
+
+
+
+#upload_file{
+    display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   margin: 2rem 18rem;
+   width: 80%;
+   padding: 2rem;
+   margin-top: -200px;
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgb(213, 213, 230);
+    box-shadow:   0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    width: 50%;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+#upload_file p{
+    font-size: 1.2rem;
+}
+
+.top_box{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#upload_file h2{
+    text-align: center;
+    flex: 1;
+}
+.close{
+    font-size: 2.2rem;
+}
+
+.file_container{
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+.upload_btn{
+    display: flex;
+
+}
+input[type = "file"]{
+    flex-grow: 6;
+    font-size: 1.4rem;
+}
+.upload_btn input[type = "submit"]{
+    flex-grow: 3;
+    border: 2px solid #6c5ce7;
+    padding: .38em 2em;
+    border-radius: .2em;
+    background-color:black;
+    color: white;
+    font-size: 1.2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+}
+input[type=file]::file-selector-button{
+
+    border: 2px solid #6c5ce7;
+    padding: .38em 2em;
+    border-radius: .2em;
+    background-color: #a29bfe;
+  }
+  input[type=file]::file-selector-button:hover{
+      background-color: black;
+      color:white;
+      box-shadow:   0px 0px 15px 1px rgba(255, 255, 255);
+  }
+  .upload_btn input[type = "submit"]:hover{
+    background-color: white;
+    color:black;
+    box-shadow:   0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+
+  }
+.info .name a{
+    color: black;
+    font-size: 1rem;
+    background-color: rgb(147, 223, 247);
+    padding:0.2rem 0.4rem;
+    border: 1px solid black ;
+    text-decoration: none;
+    margin-top: -20px;
+
+}

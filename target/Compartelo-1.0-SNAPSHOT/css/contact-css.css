@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;  
+    background-size: cover;
+    background-position-y: -130px;
+    background-attachment: fixed;
+}
+
+header{
+    display: grid;
+    background-color: rgba(102,102,203,0.7);
+    grid-template-columns: 1fr 1fr;
+}
+.title{
+    display: flex;
+}
+.title p, i{
+    align-self: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-left: 1.2rem;
+}
+
+nav{
+    align-self: center;
+    margin-left: 4rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav a, button, a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+nav a:hover, a:hover{
+    color: black;
+}
+
+.highlight{
+    background-color: rgba(255, 255, 255);
+    padding: 0.5rem 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+.highlight:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Form */
+main{
+    display: grid;
+    box-shadow:  0 1px 5px rgba(104, 104, 104, 0.8);
+    grid-template-columns: 1.4fr 1fr;
+}
+
+img{
+    width: 100%;
+}
+main h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+       color: rgba(0, 0, 221);
+
+}
+.contact-us{
+    padding:  0rem 2rem;  
+}
+form{
+    padding:2rem;
+}
+form label{
+    padding-bottom: 1.3rem;
+    font-size: 1.4rem;
+}
+
+input, textarea{
+    margin-top: 0.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    width: 100%;
+    box-shadow:  0 1px 5px rgba(104, 104, 104, 0.8);
+}
+textarea{
+    font-size: 1.2rem;
+}
+
+input[type  = "submit"]{
+    background-color: #a29bfe;
+    color: black;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 2rem;
+    padding: 0.6rem;
+    width: 100%;
+}
+input[type  = "submit"]:hover{
+    background-color: black;
+    color: white;
+    box-shadow:   0px 0px 15px 1px rgba(255, 255, 255);
+}

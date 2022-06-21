@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;  
+    background-size: cover;
+    background-position-y: -130px;
+    background-attachment: fixed;
+}
+
+header{
+    display: grid;
+    background-color: rgba(102,102,203,0.7);
+    grid-template-columns: 1fr 1fr;
+}
+.title{
+    display: flex;
+}
+.title p, i{
+    align-self: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-left: 1.2rem;
+}
+
+nav{
+    align-self: center;
+    margin-left: 4rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav a, button, a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+nav a:hover, a:hover{
+    color: black;
+}
+
+.highlight{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.5rem 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+.highlight:hover{
+    background-color: black;
+    color: white;
+
+}
+
+/* Form */
+main{
+    display: grid;
+    box-shadow:  0 1px 5px rgba(104, 104, 104, 0.8);
+    grid-template-columns: 1.39fr 1fr;
+}
+
+img{
+    width: 100%;
+}
+
+.contact-us{
+    box-shadow:  0 1px 5px rgba(104, 104, 104, 0.8);
+    background-color: white;
+    padding: 2rem 4rem;
+  
+}
+.contact-us p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+h1{
+    text-align: center;
+    color: rgba(0, 0, 221, 1);
+    margin-top: 15px;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+form{
+    padding:2rem;
+}
+form label{
+    padding-bottom: 1.3rem;
+    font-size: 1.4rem;
+}
+
+input, textarea{
+    margin-top: 0.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    width: 100%;
+    box-shadow:  0 1px 5px rgba(104, 104, 104, 0.8);
+}
+textarea{
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: rgb(66, 197, 123);
+    color: white;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 2rem;
+    padding: 0.6rem;
+    width: 100%;
+}
+button:hover{
+    background-color: black;
+}
