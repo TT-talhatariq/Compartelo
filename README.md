@@ -22,6 +22,8 @@ To run this website locally, you need to have Apache & MYSQL server as a localho
 
 - Start MySQL services and run Apache.
 
+- Otherwise, Import this project in Intellij IDEA.
+
 - Go to Signup Page and after signing up, Login using those credentials
 
 - Now, you are good to go and explore the features and enjoy Learning!
